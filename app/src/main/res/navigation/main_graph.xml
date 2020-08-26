@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/menuFragment">
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.danilkomyshev.clubcards.MenuFragment"
+        android:label="menu"
+        tools:layout="@layout/menu">
+
+        <action
+            android:id="@+id/action_menuFragment_to_newsFragment"
+            app:destination="@id/newsFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_programsFragment"
+            app:destination="@id/programsFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_blogFragment"
+            app:destination="@id/blogFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_galleryFragment"
+            app:destination="@id/galleryFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_contactsFragment"
+            app:destination="@id/contactsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.danilkomyshev.clubcards.AboutFragment"
+        android:label="about_us"
+        tools:layout="@layout/about_us" >
+    </fragment>
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.danilkomyshev.clubcards.NewsFragment"
+        android:label="news_line"
+        tools:layout="@layout/news_line" >
+    </fragment>
+    <fragment
+        android:id="@+id/programsFragment"
+        android:name="com.danilkomyshev.clubcards.ProgramsFragment"
+        android:label="programs"
+        tools:layout="@layout/programs" >
+    </fragment>
+    <fragment
+        android:id="@+id/blogFragment"
+        android:name="com.danilkomyshev.clubcards.BlogFragment"
+        android:label="blog"
+        tools:layout="@layout/blog" >
+    </fragment>
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="com.danilkomyshev.clubcards.GalleryFragment"
+        android:label="gallery"
+        tools:layout="@layout/gallery" >
+    </fragment>
+    <fragment
+        android:id="@+id/contactsFragment"
+        android:name="com.danilkomyshev.clubcards.ContactsFragment"
+        android:label="contacts"
+        tools:layout="@layout/contacts" >
+    </fragment>
+</navigation>
