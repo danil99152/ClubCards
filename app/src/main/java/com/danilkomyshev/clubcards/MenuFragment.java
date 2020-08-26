@@ -14,12 +14,7 @@ import androidx.navigation.Navigation;
 import java.util.Objects;
 
 public class MenuFragment extends Fragment {
-    TextView about;
-    //    TextView news = findViewById(R.id.newsLine);
-//    TextView pa = findViewById(R.id.programs);
-//    TextView blog = findViewById(R.id.blog);
-//    TextView contacts = findViewById(R.id.contacts);
-//    TextView gallery = findViewById(R.id.gallery);
+    TextView about, news, blog, contacts, gallery, programs;
     NavController navController;
 
     @Override
@@ -36,6 +31,41 @@ public class MenuFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 navController.navigate(R.id.action_menuFragment_to_aboutFragment);
+            }
+        });
+        news = requireView().findViewById(R.id.newsLine);
+        news.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_menuFragment_to_newsFragment);
+            }
+        });
+        blog = requireView().findViewById(R.id.blog);
+        blog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_menuFragment_to_blogFragment);
+            }
+        });
+        contacts = requireView().findViewById(R.id.contacts);
+        contacts.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_menuFragment_to_contactsFragment);
+            }
+        });
+        gallery = requireView().findViewById(R.id.gallery);
+        gallery.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_menuFragment_to_galleryFragment);
+            }
+        });
+        programs = requireView().findViewById(R.id.programs);
+        programs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_menuFragment_to_programsFragment);
             }
         });
     }
