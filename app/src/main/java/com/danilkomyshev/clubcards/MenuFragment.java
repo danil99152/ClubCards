@@ -11,8 +11,6 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
-import java.util.Objects;
-
 public class MenuFragment extends Fragment {
     TextView about, news, blog, contacts, gallery, programs;
     NavController navController;
@@ -37,7 +35,7 @@ public class MenuFragment extends Fragment {
         news.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.action_menuFragment_to_newsFragment);
+                navController.navigate(R.id.action_menuFragment_to_newsListFragment);
             }
         });
         blog = requireView().findViewById(R.id.blog);
@@ -65,7 +63,7 @@ public class MenuFragment extends Fragment {
         programs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.action_menuFragment_to_programsFragment);
+                navController.navigate(R.id.action_menuFragment_to_programsListFragment);
             }
         });
     }

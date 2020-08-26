@@ -7,9 +7,9 @@ import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
 
-public class NewsFragment extends Fragment {
+public class ProgramsListFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.news_line, container, false);
+        return inflater.inflate(R.layout.programs_list, container, false);
     }
 }

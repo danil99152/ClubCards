@@ -11,11 +11,11 @@
         tools:layout="@layout/menu">
 
         <action
-            android:id="@+id/action_menuFragment_to_newsFragment"
-            app:destination="@id/newsFragment" />
+            android:id="@+id/action_menuFragment_to_newsListFragment"
+            app:destination="@id/newsListFragment" />
         <action
-            android:id="@+id/action_menuFragment_to_programsFragment"
-            app:destination="@id/programsFragment" />
+            android:id="@+id/action_menuFragment_to_programsListFragment"
+            app:destination="@id/programsListFragment" />
         <action
             android:id="@+id/action_menuFragment_to_aboutFragment"
             app:destination="@id/aboutFragment" />
@@ -36,16 +36,16 @@
         tools:layout="@layout/about_us" >
     </fragment>
     <fragment
-        android:id="@+id/newsFragment"
-        android:name="com.danilkomyshev.clubcards.NewsFragment"
+        android:id="@+id/newsListFragment"
+        android:name="com.danilkomyshev.clubcards.NewsListFragment"
         android:label="news_line"
-        tools:layout="@layout/news_line" >
+        tools:layout="@layout/news_list" >
     </fragment>
     <fragment
-        android:id="@+id/programsFragment"
-        android:name="com.danilkomyshev.clubcards.ProgramsFragment"
+        android:id="@+id/programsListFragment"
+        android:name="com.danilkomyshev.clubcards.ProgramsListFragment"
         android:label="programs"
-        tools:layout="@layout/programs" >
+        tools:layout="@layout/programs_list" >
     </fragment>
     <fragment
         android:id="@+id/blogFragment"
